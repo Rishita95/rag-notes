@@ -1,9 +1,11 @@
 site_name: My Docs
+
 theme:
-  palette: 
+  name: material
+  palette:
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
       toggle:
