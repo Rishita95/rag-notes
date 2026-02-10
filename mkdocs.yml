@@ -1,4 +1,8 @@
-site_name: My Docs
+site_name: RAG Notes
+site_url: https://rishitagorantyal.github.io/RAGnotes
+repo_url: https://github.com/rishitagorantyal/RAGnotes
+repo_name: RAG-notes
+
 
 theme:
   name: material
