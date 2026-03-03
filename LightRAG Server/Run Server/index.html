@@ -8,29 +8,29 @@
       
       
       
-        <link rel="canonical" href="https://Rishita95.github.io/rag-notes/">
+        <link rel="canonical" href="https://Rishita95.github.io/rag-notes/LightRAG%20Server/Run%20Server/">
       
       
+        <link rel="prev" href="../Server%20Config/">
       
-        <link rel="next" href="MkDocs%20Setup/Prerequisites/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>RAG Notes</title>
+        <title>Run server - RAG Notes</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#table-of-contents" class="md-skip">
+        <a href="#4run-the-server" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="RAG Notes" class="md-header__button md-logo" aria-label="RAG Notes" data-md-component="logo">
+    <a href="../.." title="RAG Notes" class="md-header__button md-logo" aria-label="RAG Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Run server
             
           </span>
         </div>
@@ -226,7 +226,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="RAG Notes" class="md-nav__button md-logo" aria-label="RAG Notes" data-md-component="logo">
+    <a href="../.." title="RAG Notes" class="md-nav__button md-logo" aria-label="RAG Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -253,19 +253,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -281,7 +272,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -340,7 +330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MkDocs%20Setup/Prerequisites/" class="md-nav__link">
+      <a href="../../MkDocs%20Setup/Prerequisites/" class="md-nav__link">
         
   
   
@@ -368,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MkDocs%20Setup/MkDocs/" class="md-nav__link">
+      <a href="../../MkDocs%20Setup/MkDocs/" class="md-nav__link">
         
   
   
@@ -396,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MkDocs%20Setup/Git_push/" class="md-nav__link">
+      <a href="../../MkDocs%20Setup/Git_push/" class="md-nav__link">
         
   
   
@@ -478,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/LLM%20Setup/" class="md-nav__link">
+      <a href="../../LiteLLM%20Server/LLM%20Setup/" class="md-nav__link">
         
   
   
@@ -506,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/Configuration/" class="md-nav__link">
+      <a href="../../LiteLLM%20Server/Configuration/" class="md-nav__link">
         
   
   
@@ -534,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/Run%20server/" class="md-nav__link">
+      <a href="../../LiteLLM%20Server/Run%20server/" class="md-nav__link">
         
   
   
@@ -562,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/UI%20Launcher/" class="md-nav__link">
+      <a href="../../LiteLLM%20Server/UI%20Launcher/" class="md-nav__link">
         
   
   
@@ -594,18 +584,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -626,7 +618,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -644,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/IntroductionRAG/" class="md-nav__link">
+      <a href="../IntroductionRAG/" class="md-nav__link">
         
   
   
@@ -672,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/InstallationRAG/" class="md-nav__link">
+      <a href="../InstallationRAG/" class="md-nav__link">
         
   
   
@@ -700,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/Server%20Config/" class="md-nav__link">
+      <a href="../Server%20Config/" class="md-nav__link">
         
   
   
@@ -725,10 +717,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="LightRAG%20Server/Run%20Server/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -744,6 +745,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -794,11 +796,39 @@
   
 
 
-<h1 id="table-of-contents">Table of Contents</h1>
+<h1 id="4run-the-server">4.Run the Server</h1>
 <ol>
-<li><a href="#mkdocs-setup">MkDocs Setup</a></li>
-<li><a href="#lite-llm-server">LiteLLM Server</a></li>
-<li><a href="#lightrag-server">LightRAG Server</a></li>
+<li>
+<p>Start the Server</p>
+<ol>
+<li>Open Terminal.</li>
+<li>
+<p>Run this command:</p>
+<p>cd ~/LightRAG &amp;&amp; lightrag-server</p>
+</li>
+<li>
+<p>Wait a few seconds until you see Uvicorn running on http://127.0.0.1:8020.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Test the Server</p>
+<ol>
+<li>Open your web browser and go to http://127.0.0.1:8020.</li>
+<li>You should see the LightRAG UI.</li>
+<li>Click on "Upload Files" and select a PDF or text file.</li>
+<li>Click on "Index" to index the file.</li>
+<li>Click on "Chat" and ask a question about the file.</li>
+</ol>
+</li>
+<li>
+<p>Stop the Server</p>
+<ol>
+<li>Open Terminal.</li>
+<li>Press Ctrl + C to stop the server.</li>
+<li>You should see the Uvicorn server stopped message.   </li>
+</ol>
+</li>
 </ol>
 
 
@@ -849,10 +879,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

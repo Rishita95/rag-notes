@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://Rishita95.github.io/rag-notes/">
+        <link rel="canonical" href="https://Rishita95.github.io/rag-notes/LiteLLM%20Server/Configuration/">
       
       
+        <link rel="prev" href="../LLM%20Setup/">
       
-        <link rel="next" href="MkDocs%20Setup/Prerequisites/">
+      
+        <link rel="next" href="../Run%20server/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>RAG Notes</title>
+        <title>Configuration - RAG Notes</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#table-of-contents" class="md-skip">
+        <a href="#litellm-configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="RAG Notes" class="md-header__button md-logo" aria-label="RAG Notes" data-md-component="logo">
+    <a href="../.." title="RAG Notes" class="md-header__button md-logo" aria-label="RAG Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Configuration
             
           </span>
         </div>
@@ -226,7 +228,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="RAG Notes" class="md-nav__button md-logo" aria-label="RAG Notes" data-md-component="logo">
+    <a href="../.." title="RAG Notes" class="md-nav__button md-logo" aria-label="RAG Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -253,19 +255,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -281,7 +274,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -340,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MkDocs%20Setup/Prerequisites/" class="md-nav__link">
+      <a href="../../MkDocs%20Setup/Prerequisites/" class="md-nav__link">
         
   
   
@@ -368,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MkDocs%20Setup/MkDocs/" class="md-nav__link">
+      <a href="../../MkDocs%20Setup/MkDocs/" class="md-nav__link">
         
   
   
@@ -396,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MkDocs%20Setup/Git_push/" class="md-nav__link">
+      <a href="../../MkDocs%20Setup/Git_push/" class="md-nav__link">
         
   
   
@@ -428,18 +420,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -460,7 +454,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -478,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/LLM%20Setup/" class="md-nav__link">
+      <a href="../LLM%20Setup/" class="md-nav__link">
         
   
   
@@ -503,10 +497,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="LiteLLM%20Server/Configuration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -522,6 +543,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -534,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/Run%20server/" class="md-nav__link">
+      <a href="../Run%20server/" class="md-nav__link">
         
   
   
@@ -562,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/UI%20Launcher/" class="md-nav__link">
+      <a href="../UI%20Launcher/" class="md-nav__link">
         
   
   
@@ -644,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/IntroductionRAG/" class="md-nav__link">
+      <a href="../../LightRAG%20Server/IntroductionRAG/" class="md-nav__link">
         
   
   
@@ -672,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/InstallationRAG/" class="md-nav__link">
+      <a href="../../LightRAG%20Server/InstallationRAG/" class="md-nav__link">
         
   
   
@@ -700,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/Server%20Config/" class="md-nav__link">
+      <a href="../../LightRAG%20Server/Server%20Config/" class="md-nav__link">
         
   
   
@@ -728,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/Run%20Server/" class="md-nav__link">
+      <a href="../../LightRAG%20Server/Run%20Server/" class="md-nav__link">
         
   
   
@@ -776,6 +828,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -794,12 +865,55 @@
   
 
 
-<h1 id="table-of-contents">Table of Contents</h1>
-<ol>
-<li><a href="#mkdocs-setup">MkDocs Setup</a></li>
-<li><a href="#lite-llm-server">LiteLLM Server</a></li>
-<li><a href="#lightrag-server">LightRAG Server</a></li>
-</ol>
+<h1 id="litellm-configuration">LiteLLM Configuration</h1>
+<p>LiteLLM can be configured using environment variables or a configuration file primarily via a config.yaml file for the proxy server., which defines models, routing, and server settings.</p>
+<h2 id="basic-structure">Basic Structure</h2>
+<p>The config file has four main sections:</p>
+<pre><code>&gt; model_list: Defines available models and their provider details. Each entry maps a user-facing model name to a specific provider and model.
+&gt; litellm settings: LiteLLM core behaviour (logging, caching, callbacks).
+&gt; router_settings: Load balancing, fallbacks across models.
+&gt; general_settings: Proxy server options (master key, alerts, etc)
+</code></pre>
+<h1 id="1-creating-the-config-file">1. Creating the Config File</h1>
+<pre><code>&gt; Open Finder and go to your home folder.
+&gt; Create a folder named .litellm
+&gt; Inside .litellm folder, create a file named config.yaml
+&gt; Add the following content to config.yaml:
+</code></pre>
+<h1 id="2-config-template">2. Config template</h1>
+<pre><code>The below template sets up a cloud model (Gemini) and a local model (Ollama). Copy and paste this into your config.yaml file:
+
+# ~/.litellm/config.yaml
+
+litellm_settings:
+drop_params: True
+
+model_list:
+# A local model using Ollama (Wildcard route for ANY Ollama model)
+- model_name: ollama/*
+    litellm_params:
+    model: ollama/*
+    api_base: "http://localhost:11434"
+
+# A cloud model using Gemini (Wildcard route for ANY Gemini model)
+- model_name: gemini/*
+    litellm_params:
+    model: gemini/*
+    api_key: "os.environ/GEMINI_API_KEY"
+</code></pre>
+<h1 id="3-set-your-api-key">3. Set your API Key</h1>
+<pre><code>The config file searches your Mac's environment for the GEMINI_API_KEY variable. We need to save it to your Terminal profile so its available every time you open terminal.
+
+&gt; Open Finder and go to your home folder.
+&gt; Press Command + Shift + . to show hidden files.
+&gt; Find .zshrc file. If not found, create it.
+&gt; Open .zshrc file in a text editor or Antigravity.
+&gt; Add the following line at the end of the file, replacing your-key-here with your actual Gemini API key:
+
+    export GEMINI_API_KEY="your-key-here"
+
+&gt; Save the file and close it.
+</code></pre>
 
 
 
@@ -849,10 +963,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

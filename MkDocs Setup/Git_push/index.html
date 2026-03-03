@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://Rishita95.github.io/rag-notes/">
+        <link rel="canonical" href="https://Rishita95.github.io/rag-notes/MkDocs%20Setup/Git_push/">
       
       
+        <link rel="prev" href="../MkDocs/">
       
-        <link rel="next" href="MkDocs%20Setup/Prerequisites/">
+      
+        <link rel="next" href="../../LiteLLM%20Server/LLM%20Setup/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>RAG Notes</title>
+        <title>Git Push - RAG Notes</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#table-of-contents" class="md-skip">
+        <a href="#publishing-site-to-github-pages" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="RAG Notes" class="md-header__button md-logo" aria-label="RAG Notes" data-md-component="logo">
+    <a href="../.." title="RAG Notes" class="md-header__button md-logo" aria-label="RAG Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Git Push
             
           </span>
         </div>
@@ -226,7 +228,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="RAG Notes" class="md-nav__button md-logo" aria-label="RAG Notes" data-md-component="logo">
+    <a href="../.." title="RAG Notes" class="md-nav__button md-logo" aria-label="RAG Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -253,19 +255,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -281,7 +274,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -290,18 +282,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -322,7 +316,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -340,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MkDocs%20Setup/Prerequisites/" class="md-nav__link">
+      <a href="../Prerequisites/" class="md-nav__link">
         
   
   
@@ -368,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MkDocs%20Setup/MkDocs/" class="md-nav__link">
+      <a href="../MkDocs/" class="md-nav__link">
         
   
   
@@ -393,10 +387,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="MkDocs%20Setup/Git_push/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -412,6 +415,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -478,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/LLM%20Setup/" class="md-nav__link">
+      <a href="../../LiteLLM%20Server/LLM%20Setup/" class="md-nav__link">
         
   
   
@@ -506,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/Configuration/" class="md-nav__link">
+      <a href="../../LiteLLM%20Server/Configuration/" class="md-nav__link">
         
   
   
@@ -534,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/Run%20server/" class="md-nav__link">
+      <a href="../../LiteLLM%20Server/Run%20server/" class="md-nav__link">
         
   
   
@@ -562,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LiteLLM%20Server/UI%20Launcher/" class="md-nav__link">
+      <a href="../../LiteLLM%20Server/UI%20Launcher/" class="md-nav__link">
         
   
   
@@ -644,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/IntroductionRAG/" class="md-nav__link">
+      <a href="../../LightRAG%20Server/IntroductionRAG/" class="md-nav__link">
         
   
   
@@ -672,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/InstallationRAG/" class="md-nav__link">
+      <a href="../../LightRAG%20Server/InstallationRAG/" class="md-nav__link">
         
   
   
@@ -700,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/Server%20Config/" class="md-nav__link">
+      <a href="../../LightRAG%20Server/Server%20Config/" class="md-nav__link">
         
   
   
@@ -728,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LightRAG%20Server/Run%20Server/" class="md-nav__link">
+      <a href="../../LightRAG%20Server/Run%20Server/" class="md-nav__link">
         
   
   
@@ -794,11 +798,48 @@
   
 
 
-<h1 id="table-of-contents">Table of Contents</h1>
+<h1 id="publishing-site-to-github-pages">Publishing Site to GitHub Pages</h1>
+<p>You publish MkDocs to GitHub Pages with mkdocs gh-deploy command, which pushes the build site to a gh-pages branch and serves it from there. </p>
 <ol>
-<li><a href="#mkdocs-setup">MkDocs Setup</a></li>
-<li><a href="#lite-llm-server">LiteLLM Server</a></li>
-<li><a href="#lightrag-server">LightRAG Server</a></li>
+<li>Prepare your GitHub repository</li>
+</ol>
+<p>Create a new repository on GitHub. Let's call it "RAGprojects". In the Path bar at the bottom of the window</p>
+<ol>
+<li>
+<p>Initialize Git in your project</p>
+<p><code>bash
+git init</code></p>
+</li>
+<li>
+<p>Add your project files to Git</p>
+<p><code>bash
+git add .</code></p>
+</li>
+<li>
+<p>Commit your changes</p>
+<p><code>bash
+git commit -m "Initial commit"</code></p>
+</li>
+<li>
+<p>Add the remote repository</p>
+<p><code>bash
+git remote add origin &lt;repository-url&gt;</code></p>
+</li>
+<li>
+<p>Push your changes to GitHub</p>
+<p><code>bash
+git push -u origin main</code></p>
+</li>
+<li>
+<p>Deploy your site</p>
+<p><code>bash
+mkdocs gh-deploy</code></p>
+</li>
+<li>
+<p>View your site</p>
+<p><code>bash
+http://&lt;your-username&gt;.github.io/&lt;repository-name&gt;</code></p>
+</li>
 </ol>
 
 
@@ -849,10 +890,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
