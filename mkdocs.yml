@@ -3,7 +3,25 @@ site_url: https://Rishita95.github.io/rag-notes
 repo_url: https://github.com/Rishita95/rag-notes
 repo_name: RAG-notes
 
+nav:
+  - Home: index.md
+  - MkDocs Setup:
+      - Prerequisites: MkDocs Setup/Prerequisites.md
+      - Setup: MkDocs Setup/MkDocs.md
+      - Git Push: MkDocs Setup/Git_push.md
 
+  - LiteLLM Server:
+      - Introduction: LiteLLM Server/LLM Setup.md
+      - Configuration: LiteLLM Server/Configuration.md
+      - Run server: LiteLLM Server/Run server.md
+      - UI Launcher: LiteLLM Server/UI Launcher.md
+
+  - LightRAG Server:
+      - Introduction: LightRAG Server/IntroductionRAG.md
+      - Installation: LightRAG Server/InstallationRAG.md
+      - Configuration: LightRAG Server/Server Config.md
+      - Run server: LightRAG Server/Run Server.md
+      
 theme:
   name: material
   palette:
@@ -11,7 +29,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: deep orange
+    - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
