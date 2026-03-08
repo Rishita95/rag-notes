@@ -869,51 +869,53 @@
 <p>LiteLLM can be configured using environment variables or a configuration file primarily via a config.yaml file for the proxy server., which defines models, routing, and server settings.</p>
 <h2 id="basic-structure">Basic Structure</h2>
 <p>The config file has four main sections:</p>
-<pre><code>&gt; model_list: Defines available models and their provider details. Each entry maps a user-facing model name to a specific provider and model.
-&gt; litellm settings: LiteLLM core behaviour (logging, caching, callbacks).
-&gt; router_settings: Load balancing, fallbacks across models.
-&gt; general_settings: Proxy server options (master key, alerts, etc)
-</code></pre>
+<blockquote>
+<p>model_list: Defines available models and their provider details. Each entry maps a user-facing model name to a specific provider and model.
+litellm settings: LiteLLM core behaviour (logging, caching, callbacks).
+router_settings: Load balancing, fallbacks across models.
+general_settings: Proxy server options (master key, alerts, etc)</p>
+</blockquote>
 <h1 id="1-creating-the-config-file">1. Creating the Config File</h1>
-<pre><code>&gt; Open Finder and go to your home folder.
-&gt; Create a folder named .litellm
-&gt; Inside .litellm folder, create a file named config.yaml
-&gt; Add the following content to config.yaml:
-</code></pre>
+<blockquote>
+<p>Open Finder and go to your home folder.
+Create a folder named .litellm
+Inside .litellm folder, create a file named config.yaml
+Add the following content to config.yaml:</p>
+</blockquote>
 <h1 id="2-config-template">2. Config template</h1>
-<pre><code>The below template sets up a cloud model (Gemini) and a local model (Ollama). Copy and paste this into your config.yaml file:
-
-# ~/.litellm/config.yaml
-
-litellm_settings:
-drop_params: True
-
-model_list:
-# A local model using Ollama (Wildcard route for ANY Ollama model)
-- model_name: ollama/*
-    litellm_params:
-    model: ollama/*
-    api_base: "http://localhost:11434"
-
-# A cloud model using Gemini (Wildcard route for ANY Gemini model)
-- model_name: gemini/*
-    litellm_params:
-    model: gemini/*
-    api_key: "os.environ/GEMINI_API_KEY"
-</code></pre>
+<p>The below template sets up a cloud model (Gemini) and a local model (Ollama). Copy and paste this into your config.yaml file:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># ~/.litellm/config.yaml</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">litellm_settings</span><span class="p">:</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">drop_params</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nt">model_list</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="c1"># A local model using Ollama (Wildcard route for ANY Ollama model)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">model_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ollama/*</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nt">litellm_params</span><span class="p">:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ollama/*</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">api_base</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;http://localhost:11434&quot;</span><span class="w"> </span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="c1"># A cloud model using Gemini (Wildcard route for ANY Gemini model)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">model_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gemini/*</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nt">litellm_params</span><span class="p">:</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gemini/*</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">      </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;os.environ/GEMINI_API_KEY&quot;</span>
+</span></code></pre></div>
 <h1 id="3-set-your-api-key">3. Set your API Key</h1>
-<pre><code>The config file searches your Mac's environment for the GEMINI_API_KEY variable. We need to save it to your Terminal profile so its available every time you open terminal.
-
-&gt; Open Finder and go to your home folder.
-&gt; Press Command + Shift + . to show hidden files.
-&gt; Find .zshrc file. If not found, create it.
-&gt; Open .zshrc file in a text editor or Antigravity.
-&gt; Add the following line at the end of the file, replacing your-key-here with your actual Gemini API key:
-
-    export GEMINI_API_KEY="your-key-here"
-
-&gt; Save the file and close it.
-</code></pre>
+<p>The config file searches your Mac's environment for the GEMINI_API_KEY variable. We need to save it to your Terminal profile so its available every time you open terminal.</p>
+<blockquote>
+<p>Open Finder and go to your home folder.
+Press Command + Shift + . to show hidden files.
+Find .zshrc file. If not found, create it.
+Open .zshrc file in a text editor or Antigravity.
+Add the following line at the end of the file, replacing your-key-here with your actual Gemini API key:</p>
+</blockquote>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">GEMINI_API_KEY</span><span class="o">=</span><span class="s2">&quot;your-key-here&quot;</span>
+</span></code></pre></div>
+<blockquote>
+<p>Save the file and close it.</p>
+</blockquote>
 
 
 
@@ -963,7 +965,7 @@ model_list:
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

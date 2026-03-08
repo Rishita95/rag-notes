@@ -703,6 +703,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -719,6 +737,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Create folders
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-create-a-configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Create a configuration file
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -780,6 +839,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Create folders
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-create-a-configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Create a configuration file
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -799,93 +888,109 @@
 
 
 <h1 id="3-configuring-the-server">3. Configuring the Server</h1>
+<h2 id="1-create-folders">1. Create folders</h2>
 <ol>
 <li>
-<p>Create folders</p>
+<p>Open Finder and go to Applications.</p>
+</li>
+<li>
+<p>Create a folder named LightRAG Server.</p>
+</li>
+<li>
+<p>Inside LightRAG Server, create two empty folders: inputs and rag_storage.</p>
 <ol>
-<li>Open Finder and go to Applications.</li>
-<li>Create a folder named LightRAG Server.</li>
-<li>Inside LightRAG Server, create two empty folders: inputs and rag_storage.<ol>
 <li>inputs: where you drop your PDFs, text files, etc.</li>
 <li>rag_storage: where LightRAG will store its database and indexes.</li>
 </ol>
 </li>
 </ol>
+<h2 id="2-create-a-configuration-file">2. Create a configuration file</h2>
+<ol>
+<li>
+<p>Open Antigravity and create a new blank document.</p>
 </li>
 <li>
-<p>Create a configuration file</p>
-<ol>
-<li>Open Antigravity and create a new blank document.</li>
-<li>Paste the following configuration:</li>
-<li>
-<p>Save the file as .env in the LightRAG Server folder.</p>
-<p>--- General Server Settings ---
-HOST=127.0.0.1
-PORT=8020
-WEBUI_TITLE=My Personal RAG
-WEBUI_DESCRIPTION=A private RAG system powered by LightRAG</p>
-<p>--- Directory Settings (Optional) ---
- INPUT_DIR=/Users/your-username/LightRAG/inputs</p>
+<p>Paste the following configuration:</p>
+</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>--- General Server Settings ---
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>HOST=127.0.0.1
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>PORT=8020
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>WEBUI_TITLE=My Personal RAG
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>WEBUI_DESCRIPTION=A private RAG system powered by LightRAG
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>--- Directory Settings (Optional) ---
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>INPUT_DIR=/Users/your-username/LightRAG/inputs
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>--- Indexing Performance ---
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>MAX_ASYNC=4
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>MAX_PARALLEL_INSERT=2
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>CHUNK_SIZE=1200
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>CHUNK_OVERLAP_SIZE=100
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>==========================================
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>CHOOSE ONE PROVIDER BELOW
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>==========================================
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>--- Option 1: LITELLM PROXY (Recommended) ---
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>Use this for both LLM and Embeddings via your local LiteLLM Gateway
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>LLM_BINDING=openai
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>LLM_BINDING_HOST=http://localhost:4000/v1
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>LLM_MODEL=gemini/gemini-2.5-flash
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>LLM_BINDING_API_KEY=any-string-will-work
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>EMBEDDING_BINDING=openai
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>EMBEDDING_BINDING_HOST=http://localhost:4000/v1
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>EMBEDDING_MODEL=gemini/gemini-embedding-001
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>EMBEDDING_DIM=3072
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>EMBEDDING_BINDING_API_KEY=any-string-will-work
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>--- Option 2: OLLAMA ---
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>LLM_BINDING=ollama
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>LLM_BINDING_HOST=http://localhost:11434
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>LLM_MODEL=mistral-nemo:latest
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>OLLAMA_LLM_NUM_CTX=32768
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>EMBEDDING_BINDING=ollama
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>EMBEDDING_BINDING_HOST=http://localhost:11434
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>EMBEDDING_MODEL=bge-m3:latest
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>EMBEDDING_DIM=1024
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>--- Option 3: OPENAI ---
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>LLM_BINDING=openai
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>LLM_BINDING_HOST=https://api.openai.com/v1
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>LLM_MODEL=gpt-4o
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>LLM_BINDING_API_KEY=sk-your-api-key-here
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>--- OpenAI (Embedding) ---
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>EMBEDDING_BINDING=openai
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>EMBEDDING_MODEL=text-embedding-3-large
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>EMBEDDING_DIM=3072
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>EMBEDDING_SEND_DIM=false
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>EMBEDDING_TOKEN_LIMIT=8192
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>EMBEDDING_BINDING_HOST=https://api.openai.com/v1
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>EMBEDDING_BINDING_API_KEY=sk-your-api-key-here
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>--- Option 4: GEMINI ---
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>LLM_BINDING=gemini
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>LLM_MODEL=gemini-2.0-flash
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>LLM_BINDING_HOST=https://generativelanguage.googleapis.com
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>LLM_BINDING_API_KEY=your-gemini-api-key-here
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>EMBEDDING_BINDING=gemini
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>EMBEDDING_MODEL=gemini-embedding-001
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>EMBEDDING_BINDING_HOST=https://generativelanguage.googleapis.com
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>EMBEDDING_BINDING_API_KEY=your-gemini-api-key-here
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>EMBEDDING_DIM=3072
+</span></code></pre></div>
 <blockquote>
 <p>[!TIP]
 <strong>Directory Setup:</strong> We follow the official LightRAG standard by placing all database files inside the <code>rag_storage</code> folder. This keeps the root of <code>~/LightRAG</code> tidy, containing only your <code>.env</code> settings and the <code>inputs</code> folder.</p>
 </blockquote>
-<p>--- Indexing Performance ---
-MAX_ASYNC=4
-MAX_PARALLEL_INSERT=2
-CHUNK_SIZE=1200
-CHUNK_OVERLAP_SIZE=100</p>
-<p>==========================================
- CHOOSE ONE PROVIDER BELOW
- ==========================================</p>
-<p>--- Option 1: LITELLM PROXY (Recommended) ---
- Use this for both LLM and Embeddings via your local LiteLLM Gateway
-LLM_BINDING=openai
-LLM_BINDING_HOST=http://localhost:4000/v1
-LLM_MODEL=gemini/gemini-2.5-flash
-LLM_BINDING_API_KEY=any-string-will-work</p>
-<p>EMBEDDING_BINDING=openai
-EMBEDDING_BINDING_HOST=http://localhost:4000/v1
-EMBEDDING_MODEL=gemini/gemini-embedding-001
-EMBEDDING_DIM=3072
-EMBEDDING_BINDING_API_KEY=any-string-will-work</p>
-<p>--- Option 2: OLLAMA ---
- LLM_BINDING=ollama
- LLM_BINDING_HOST=http://localhost:11434
- LLM_MODEL=mistral-nemo:latest
- OLLAMA_LLM_NUM_CTX=32768
- EMBEDDING_BINDING=ollama
- EMBEDDING_BINDING_HOST=http://localhost:11434
- EMBEDDING_MODEL=bge-m3:latest
- EMBEDDING_DIM=1024</p>
-<p>--- Option 3: OPENAI ---
- LLM_BINDING=openai
- LLM_BINDING_HOST=https://api.openai.com/v1
- LLM_MODEL=gpt-4o
- LLM_BINDING_API_KEY=sk-your-api-key-here</p>
-<p>--- OpenAI (Embedding) ---
- EMBEDDING_BINDING=openai
- EMBEDDING_MODEL=text-embedding-3-large
- EMBEDDING_DIM=3072
- EMBEDDING_SEND_DIM=false
- EMBEDDING_TOKEN_LIMIT=8192
- EMBEDDING_BINDING_HOST=https://api.openai.com/v1
- EMBEDDING_BINDING_API_KEY=sk-your-api-key-here</p>
-<p>--- Option 4: GEMINI ---
- LLM_BINDING=gemini
- LLM_MODEL=gemini-2.0-flash
- LLM_BINDING_HOST=https://generativelanguage.googleapis.com
- LLM_BINDING_API_KEY=your-gemini-api-key-here
- EMBEDDING_BINDING=gemini
- EMBEDDING_MODEL=gemini-embedding-001
- EMBEDDING_BINDING_HOST=https://generativelanguage.googleapis.com
- EMBEDDING_BINDING_API_KEY=your-gemini-api-key-here
- EMBEDDING_DIM=3072</p>
-<pre><code>3. Replace YOUR_OPENAI_KEY with your actual OpenAI API key.
-4. Save the file as config.json in the LightRAG Server folder.
-</code></pre>
+<ol>
+<li>
+<p>Replace YOUR_OPENAI_KEY with your actual OpenAI API key.</p>
 </li>
-</ol>
+<li>
+<p>Save the file as config.json in the LightRAG Server folder.</p>
 </li>
 </ol>
 
@@ -937,7 +1042,7 @@ EMBEDDING_BINDING_API_KEY=any-string-will-work</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

@@ -726,10 +726,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-the-lightrag-server-command-line-tool-open-terminal-and-run" class="md-nav__link">
+  <a href="#install-the-lightrag-server-command-line-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install the lightrag-server command-line tool. Open Terminal and run:
+        Install the lightrag-server command-line tool.
       
     </span>
   </a>
@@ -835,10 +835,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-the-lightrag-server-command-line-tool-open-terminal-and-run" class="md-nav__link">
+  <a href="#install-the-lightrag-server-command-line-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install the lightrag-server command-line tool. Open Terminal and run:
+        Install the lightrag-server command-line tool.
       
     </span>
   </a>
@@ -866,13 +866,15 @@
 
 
 <h1 id="2-how-to-install-lightrag">2. How to install LightRAG</h1>
-<pre><code>You install and run the LightRAG HTTP server on macOS by installing the lightrag-hku[api] package, setting your LLM/embedding backends via env or config, 
-and then starting lightrag-server. Steps below assume Python 3 is already installed.
-</code></pre>
-<h2 id="install-the-lightrag-server-command-line-tool-open-terminal-and-run">Install the lightrag-server command-line tool. Open Terminal and run:</h2>
-<p>uv tool install "lightrag-hku[offline,observability]"</p>
-<p>To confirm it installed correctly, run:</p>
-<p>which lightrag-server</p>
+<p>You install and run the LightRAG HTTP server on macOS by installing the lightrag-hku[api] package, setting your LLM/embedding backends via env or config, 
+and then starting lightrag-server. Steps below assume Python 3 is already installed.</p>
+<h2 id="install-the-lightrag-server-command-line-tool">Install the lightrag-server command-line tool.</h2>
+<p><b>1. Open Terminal and run:</b></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>uv<span class="w"> </span>tool<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;lightrag-hku[offline,observability]&quot;</span>
+</span></code></pre></div>
+<p><b>2. To confirm it installed correctly, run:</b></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>which<span class="w"> </span>lightrag-server
+</span></code></pre></div>
 <p>You should see a path like ~/.local/bin/lightrag-server.</p>
 
 
@@ -923,7 +925,7 @@ and then starting lightrag-server. Steps below assume Python 3 is already instal
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
