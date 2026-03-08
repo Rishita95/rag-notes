@@ -10,17 +10,20 @@ First, we need a simple script for Platypus to run.
 
 2. Open Zed, create a new blank document, and paste this code: (Note: macOS GUI apps don't load your Terminal environment by default. We must explicitly export the Homebrew paths so it can find your installed tools.)
 
-    #!/bin/bash
-    export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
-    source ~/.zshrc
-    ~/.local/bin/litellm --config ~/.litellm/config.yaml
+```bash
+#!/bin/bash
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+source ~/.zshrc
+~/.local/bin/litellm --config ~/.litellm/config.yaml
+```
 
 3. Save it into your .litellm folder as litellm-launcher.sh.
 
 4. Make it Executable: While still in the .litellm folder in Finder, press ⌥ + ⌘ + P to show the Path Bar at the bottom of the window. Right-click .litellm in that Path Bar and select Open in Terminal. Then run:
 
-
-    chmod +x ~/.litellm/litellm-launcher.sh
+```bash
+chmod +x ~/.litellm/litellm-launcher.sh
+```
 
 ## Create the App
 

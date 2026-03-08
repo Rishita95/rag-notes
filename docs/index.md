@@ -1,6 +1,7 @@
+# Application Documentation
 
 # Table of Contents
 
-1. [MkDocs Setup](#mkdocs-setup)
-2. [LiteLLM Server](#lite-llm-server)
-3. [LightRAG Server](#lightrag-server)
+1. [MkDocs Setup](MkDocs Setup/Prerequisites.md)
+2. [LiteLLM Server](LiteLLM Server/LLM Setup.md)
+3. [LightRAG Server](LightRAG Server/IntroductionRAG.md)

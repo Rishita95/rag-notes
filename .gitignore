@@ -8,3 +8,15 @@ wheels/
 
 # Virtual environments
 .venv
+
+# MkDocs
+site/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

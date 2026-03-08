@@ -1,43 +1,47 @@
 # 1. Prerequisites
 
-1.1 Open Terminal
-    - Press Cmd + Space
-    - Type "Terminal" and hit "Enter"
-    - You'll use this window for all commands.
+## 1.1 Open Terminal
+- Press Cmd + Space
+- Type "Terminal" and hit "Enter"
+- You'll use this window for all commands.
 
-1.2 Check Python
+## 1.2 Check Python
 
-    > Run the following command to check if Python is installed:
+> Run the following command to check if Python is installed:
 
-        ```bash
-        python3 --version
-        ```
+```bash
+python3 --version
+```
 
-        If you see something like Python 3.11.7, you’re good. MkDocs needs Python 3.
-    
-        If you see “command not found” or only an old Python 2.x, install Python.
+If you see something like Python 3.11.7, you’re good. MkDocs needs Python 3.
 
-    > To install Python via Homebrew exists (recommended):
+If you see “command not found” or only an old Python 2.x, install Python.
 
-        1. Check if Homebrew is installed:
-            - brew --version
+> To install Python via Homebrew (recommended):
 
-        2. If not installed, install Homebrew:
+1. Check if Homebrew is installed:
+    ```bash
+    brew --version
+    ```
 
-        - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+2. If not installed, install Homebrew:
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
 
-    >   Install Python 3:
+3. Install Python 3:
+    ```bash
+    brew install python3
+    ```
 
-        - brew install python3
+This gives you Python 3 and pip (the package installer) together.
 
-        This gives you Python 3 and pip (the package installer) together.
+## 1.3 Check pip:
 
-1.3 Check pip:
+> Run the following command to check if pip is installed:
 
-    > Run the following command to check if pip is installed:
+```bash
+pip3 --version
+```
 
-        ```bash
-        pip3 --version
-        ```
-
-        If you see something like pip 23.3.1, you’re good. MkDocs needs pip.
+If you see something like pip 23.3.1, you’re good. MkDocs needs pip.

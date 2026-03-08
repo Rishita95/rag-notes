@@ -8,45 +8,45 @@ Create a new repository on GitHub. Let's call it "RAGprojects". In the Path bar 
 
 2. Initialize Git in your project
 
-    ```bash
-    git init
-    ```
+```bash
+git init
+```
 
 3. Add your project files to Git
 
-    ```bash
-    git add .
-    ```
+```bash
+git add .
+```
 
 4. Commit your changes
 
-    ```bash
-    git commit -m "Initial commit"
-    ```
+```bash
+git commit -m "Initial commit"
+```
 
 5. Add the remote repository
 
-    ```bash
-    git remote add origin <repository-url>
-    ```
+```bash
+git remote add origin <repository-url>
+```
 
 6. Push your changes to GitHub
 
-    ```bash
-    git push -u origin main
-    ```
+```bash
+git push -u origin main
+```
 
 7. Deploy your site
 
-    ```bash
-    mkdocs gh-deploy
-    ```
+```bash
+mkdocs gh-deploy
+```
 
 8. View your site
 
-    ```bash
-    http://<your-username>.github.io/<repository-name>
-    ```
+```bash
+http://<your-username>.github.io/<repository-name>
+```
 
 
 
