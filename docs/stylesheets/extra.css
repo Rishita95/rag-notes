@@ -1,62 +1,66 @@
 :root {
-  /* Pistachio & Lilac Theme - Global Base */
-  --md-primary-fg-color:        #D0E1D4;  
-  --md-primary-fg-color--light: #E8F5E9;
-  --md-primary-fg-color--dark:  #A5D6A7;
-  --md-primary-bg-color:        #2A3A2C;  
+  /* Misty Lavender & Navy Professional Theme */
+  --md-primary-fg-color:        #BDB5D5;  /* Misty Lavender */
+  --md-primary-fg-color--light: #E6E6FA;
+  --md-primary-fg-color--dark:  #9A8EB5;  
+  --md-primary-bg-color:        #1A237E;  /* Navy Blue */
 
-  /* Lilac / Purple for Accents */
-  --md-accent-fg-color:         #9C27B0;
-  --md-accent-fg-color--transparent: rgba(156, 39, 176, 0.1);
+  /* Accents */
+  --md-accent-fg-color:         #3F51B5;  /* Indigo Accent */
+  --md-accent-fg-color--transparent: rgba(63, 81, 181, 0.1);
   --md-accent-bg-color:         #FFFFFF;
 
-  /* Full Page Background */
-  --md-default-bg-color:        #F5FAF6; 
+  /* Page Background */
+  --md-default-bg-color:        #F8F8FF;  /* Ghost White Mist */
 }
 
 /* Light Mode (Default) */
 [data-md-color-scheme="default"] {
-  --md-default-bg-color:           #F5FAF6; 
-  --md-default-fg-color:           #2A3A2C; 
-  --md-default-fg-color--light:    #3E4E40;
-  --md-default-fg-color--lighter:  #4A5A4C;
-  --md-default-fg-color--lightest: #546456;
-  --md-typeset-color:              #2A3A2C;
-  --md-typeset-a-color:            #8E24AA; 
+  --md-default-bg-color:           #F8F8FF; 
+  --md-default-fg-color:           #2C3E50; /* Slate Blue-Grey Text */
+  --md-default-fg-color--light:    #34495E;
+  --md-default-fg-color--lighter:  #5D6D7E;
+  --md-default-fg-color--lightest: #AEB6BF;
+  --md-typeset-color:              #2C3E50;
+  --md-typeset-a-color:            #3F51B5; 
 }
 
 [data-md-color-scheme="default"] .md-typeset {
-  color: #2A3A2C !important;
+  color: #2C3E50 !important;
 }
+
 [data-md-color-scheme="default"] .md-typeset h1,
 [data-md-color-scheme="default"] .md-typeset h2,
 [data-md-color-scheme="default"] .md-typeset h3,
 [data-md-color-scheme="default"] .md-typeset h4,
 [data-md-color-scheme="default"] .md-typeset h5,
 [data-md-color-scheme="default"] .md-typeset h6 {
-  color: #172418 !important; 
+  color: #1A237E !important; /* Deep Navy Headers */
 }
+
 [data-md-color-scheme="default"] .md-typeset a {
-  color: #8E24AA !important; 
+  color: #3F51B5 !important; 
 }
 
 /* Dark Mode (Slate) */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color:        #141F16; 
-  --md-primary-fg-color:        #D0E1D4; 
-  --md-primary-bg-color:        #2A3A2C; 
-  --md-accent-fg-color:         #9C27B0;
+  --md-default-bg-color:        #101223; /* Deep Midnight Navy */
+  --md-primary-fg-color:        #BDB5D5; 
+  --md-primary-bg-color:        #1A237E; 
+  --md-accent-fg-color:         #7986CB;
 
-  --md-default-fg-color:           #F5F5F5;
-  --md-default-fg-color--light:    #EEEEEE;
-  --md-default-fg-color--lighter:  #DDDDDD;
-  --md-default-fg-color--lightest: #CCCCCC;
-  --md-typeset-color:              #F5F5F5;
-  --md-typeset-a-color:            #CE93D8; 
+  --md-default-fg-color:           #E8EAF6;
+  --md-default-fg-color--light:    #C5CAE9;
+  --md-default-fg-color--lighter:  #9FA8DA;
+  --md-default-fg-color--lightest: #7986CB;
+  --md-typeset-color:              #E8EAF6;
+  --md-typeset-a-color:            #9FA8DA; 
 }
+
 [data-md-color-scheme="slate"] .md-typeset {
-  color: #F5F5F5 !important;
+  color: #E8EAF6 !important;
 }
+
 [data-md-color-scheme="slate"] .md-typeset h1,
 [data-md-color-scheme="slate"] .md-typeset h2,
 [data-md-color-scheme="slate"] .md-typeset h3,
@@ -65,6 +69,7 @@
 [data-md-color-scheme="slate"] .md-typeset h6 {
   color: #FFFFFF !important;
 }
+
 [data-md-color-scheme="slate"] .md-typeset a {
-  color: #CE93D8 !important;
+  color: #9FA8DA !important;
 }
