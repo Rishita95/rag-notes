@@ -1,32 +1,32 @@
 :root {
-  /* Misty Lavender & Navy Professional Theme */
-  --md-primary-fg-color:        #BDB5D5;  /* Misty Lavender */
-  --md-primary-fg-color--light: #E6E6FA;
-  --md-primary-fg-color--dark:  #9A8EB5;  
-  --md-primary-bg-color:        #1A237E;  /* Navy Blue */
+  /* Sage & Soft Mint Professional Theme */
+  --md-primary-fg-color:        #A5D7A7;  /* Sage Green */
+  --md-primary-fg-color--light: #C8E6C9;
+  --md-primary-fg-color--dark:  #81C784;
+  --md-primary-bg-color:        #455A64;  /* Deep Slate Gray */
 
   /* Accents */
-  --md-accent-fg-color:         #3F51B5;  /* Indigo Accent */
-  --md-accent-fg-color--transparent: rgba(63, 81, 181, 0.1);
+  --md-accent-fg-color:         #607D8B;  /* Blue Gray */
+  --md-accent-fg-color--transparent: rgba(96, 125, 139, 0.1);
   --md-accent-bg-color:         #FFFFFF;
 
   /* Page Background */
-  --md-default-bg-color:        #F8F8FF;  /* Ghost White Mist */
+  --md-default-bg-color:        #F1F8E9; /* Light Mint Off-white */
 }
 
 /* Light Mode (Default) */
 [data-md-color-scheme="default"] {
-  --md-default-bg-color:           #F8F8FF; 
-  --md-default-fg-color:           #2C3E50; /* Slate Blue-Grey Text */
-  --md-default-fg-color--light:    #34495E;
-  --md-default-fg-color--lighter:  #5D6D7E;
-  --md-default-fg-color--lightest: #AEB6BF;
-  --md-typeset-color:              #2C3E50;
-  --md-typeset-a-color:            #3F51B5; 
+  --md-default-bg-color:           #F1F8E9; 
+  --md-default-fg-color:           #263238; /* Dark Blue Gray 900 */
+  --md-default-fg-color--light:    #37474F;
+  --md-default-fg-color--lighter:  #455A64;
+  --md-default-fg-color--lightest: #546E7A;
+  --md-typeset-color:              #263238;
+  --md-typeset-a-color:            #388E3C; /* Darker Sage Green Link */
 }
 
 [data-md-color-scheme="default"] .md-typeset {
-  color: #2C3E50 !important;
+  color: #263238 !important;
 }
 
 [data-md-color-scheme="default"] .md-typeset h1,
@@ -35,30 +35,30 @@
 [data-md-color-scheme="default"] .md-typeset h4,
 [data-md-color-scheme="default"] .md-typeset h5,
 [data-md-color-scheme="default"] .md-typeset h6 {
-  color: #1A237E !important; /* Deep Navy Headers */
+  color: #1B2124 !important; /* Almost Black Blue-Gray */
 }
 
 [data-md-color-scheme="default"] .md-typeset a {
-  color: #3F51B5 !important; 
+  color: #2E7D32 !important; 
 }
 
 /* Dark Mode (Slate) */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color:        #101223; /* Deep Midnight Navy */
-  --md-primary-fg-color:        #BDB5D5; 
-  --md-primary-bg-color:        #1A237E; 
-  --md-accent-fg-color:         #7986CB;
+  --md-default-bg-color:        #1A211D; /* Deep Sage Black */
+  --md-primary-fg-color:        #A5D7A7; 
+  --md-primary-bg-color:        #2E3B33; 
+  --md-accent-fg-color:         #81C784;
 
-  --md-default-fg-color:           #E8EAF6;
-  --md-default-fg-color--light:    #C5CAE9;
-  --md-default-fg-color--lighter:  #9FA8DA;
-  --md-default-fg-color--lightest: #7986CB;
-  --md-typeset-color:              #E8EAF6;
-  --md-typeset-a-color:            #9FA8DA; 
+  --md-default-fg-color:           #F1F8E9;
+  --md-default-fg-color--light:    #CFD8DC;
+  --md-default-fg-color--lighter:  #B0BEC5;
+  --md-default-fg-color--lightest: #78909C;
+  --md-typeset-color:              #F1F8E9;
+  --md-typeset-a-color:            #A5D7A7; 
 }
 
 [data-md-color-scheme="slate"] .md-typeset {
-  color: #E8EAF6 !important;
+  color: #F1F8E9 !important;
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1,
@@ -71,5 +71,5 @@
 }
 
 [data-md-color-scheme="slate"] .md-typeset a {
-  color: #9FA8DA !important;
+  color: #A5D7A7 !important;
 }
