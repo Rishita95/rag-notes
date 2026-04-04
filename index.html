@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#application-documentation" class="md-skip">
+        <a href="#rag-infrastructure-notes" class="md-skip">
           Skip to content
         </a>
       
@@ -267,6 +267,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -283,6 +301,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Project Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Core Objectives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📂 Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -778,6 +848,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Project Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Core Objectives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📂 Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -796,12 +907,42 @@
   
 
 
-<h1 id="application-documentation">Application Documentation</h1>
-<h1 id="table-of-contents">Table of Contents</h1>
+<h1 id="rag-infrastructure-notes">🛠️ RAG Infrastructure &amp; Notes</h1>
+<p>Welcome! This site is your central hub for architecting a high-performance, local <strong>Retrieval-Augmented Generation (RAG)</strong> system on macOS.</p>
+<hr />
+<h2 id="project-overview">🎯 Project Overview</h2>
+<p>We are building a unified ecosystem for local AI development. By integrating a powerful model proxy with a specialized retrieval server, we eliminate the need to switch between fragmented APIs. The result is a seamless, localized workflow for private, document-based AI applications.</p>
+<h2 id="core-objectives">🚀 Core Objectives</h2>
+<p>Our implementation focuses on three primary pillars:</p>
 <ol>
-<li><a href="MkDocs%20Setup/Prerequisites/">MkDocs Setup</a></li>
-<li><a href="LiteLLM%20Server/LLM%20Setup/">LiteLLM Server</a></li>
-<li><a href="LightRAG%20Server/IntroductionRAG/">LightRAG Server</a></li>
+<li><strong>Documentation Architecture</strong><ul>
+<li>Using <strong>MkDocs</strong> to maintain a clean, versioned guide for our local infrastructure.</li>
+</ul>
+</li>
+<li><strong>Unified Model Access</strong><ul>
+<li>Leveraging <strong>LiteLLM</strong> to proxy local models (Ollama) and cloud models (Gemini, Imagen) through a single, OpenAI-compatible endpoint.</li>
+</ul>
+</li>
+<li><strong>Intelligent Knowledge Retrieval</strong><ul>
+<li>Deploying <strong>LightRAG</strong> to index personal datasets, enabling advanced semantic search and chat capabilities based on your own data.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="table-of-contents">📂 Table of Contents</h2>
+<ol>
+<li><strong><a href="MkDocs%20Setup/Prerequisites/">MkDocs Setup</a></strong><ul>
+<li><em>The foundation: Building the documentation framework used to manage and publish these guides.</em></li>
+</ul>
+</li>
+<li><strong><a href="LiteLLM%20Server/LLM%20Setup/">LiteLLM Server</a></strong><ul>
+<li><em>The model proxy: Configuring the core server that connects all local and cloud AI models into one stream.</em></li>
+</ul>
+</li>
+<li><strong><a href="LightRAG%20Server/IntroductionRAG/">LightRAG Server</a></strong><ul>
+<li><em>The retrieval engine: Step-by-step setup for document indexing and local knowledge base chat.</em></li>
+</ul>
+</li>
 </ol>
 
 
