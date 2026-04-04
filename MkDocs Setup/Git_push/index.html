@@ -401,6 +401,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git Push
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -417,6 +435,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-prepare-your-github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Prepare your GitHub repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-initialize-git-in-your-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Initialize Git in your project
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-add-your-project-files-to-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Add your project files to Git
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-commit-your-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Commit your changes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-add-the-remote-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Add the remote repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-push-your-changes-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Push your changes to GitHub
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-deploy-your-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Deploy your site
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-view-your-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. View your site
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -782,6 +907,102 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-prepare-your-github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Prepare your GitHub repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-initialize-git-in-your-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Initialize Git in your project
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-add-your-project-files-to-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Add your project files to Git
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-commit-your-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Commit your changes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-add-the-remote-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Add the remote repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-push-your-changes-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Push your changes to GitHub
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-deploy-your-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Deploy your site
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-view-your-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. View your site
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -802,43 +1023,27 @@
 
 <h1 id="publishing-site-to-github-pages">Publishing Site to GitHub Pages</h1>
 <p>You publish MkDocs to GitHub Pages with mkdocs gh-deploy command, which pushes the build site to a gh-pages branch and serves it from there. </p>
-<ol>
-<li>Prepare your GitHub repository</li>
-</ol>
+<h2 id="1-prepare-your-github-repository">1. Prepare your GitHub repository</h2>
 <p>Create a new repository on GitHub. Let's call it "RAGprojects". In the Path bar at the bottom of the window</p>
-<ol>
-<li>Initialize Git in your project</li>
-</ol>
+<h2 id="2-initialize-git-in-your-project">2. Initialize Git in your project</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>init
 </span></code></pre></div>
-<ol>
-<li>Add your project files to Git</li>
-</ol>
+<h2 id="3-add-your-project-files-to-git">3. Add your project files to Git</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
 </span></code></pre></div>
-<ol>
-<li>Commit your changes</li>
-</ol>
+<h2 id="4-commit-your-changes">4. Commit your changes</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
 </span></code></pre></div>
-<ol>
-<li>Add the remote repository</li>
-</ol>
+<h2 id="5-add-the-remote-repository">5. Add the remote repository</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;repository-url&gt;
 </span></code></pre></div>
-<ol>
-<li>Push your changes to GitHub</li>
-</ol>
+<h2 id="6-push-your-changes-to-github">6. Push your changes to GitHub</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
 </span></code></pre></div>
-<ol>
-<li>Deploy your site</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdocs<span class="w"> </span>gh-deploy
+<h2 id="7-deploy-your-site">7. Deploy your site</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>uv<span class="w"> </span>run<span class="w"> </span>mkdocs<span class="w"> </span>gh-deploy
 </span></code></pre></div>
-<ol>
-<li>View your site</li>
-</ol>
+<h2 id="8-view-your-site">8. View your site</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>http://&lt;your-username&gt;.github.io/&lt;repository-name&gt;
 </span></code></pre></div>
 
